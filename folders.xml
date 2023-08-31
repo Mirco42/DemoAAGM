@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><l7:Export xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:Folders>
+      <l7:Folder id="0000000000000000ffffffffffffec76" version="0">
+        <l7:Name>Root Node</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="0000000000000000ffffffffffffec76" id="b56f10f3c04cd607eb080dce4b0426e5" version="0">
+        <l7:Name>Demo</l7:Name>
+      </l7:Folder>
+    </l7:Folders>
+  </l7:Export>

@@ -1,0 +1,193 @@
+{
+    "service": [
+        {
+            "serviceDetail": {
+                "folderId": "b56f10f3c04cd607eb080dce4b0426e5",
+                "id": "b56f10f3c04cd607eb080dce4b042769",
+                "name": "Parrot API",
+                "enabled": "true",
+                "serviceMappings": {
+                    "httpMapping": {
+                        "urlPattern": "\/parrot",
+                        "verbs": {
+                            "verb": [
+                                "GET",
+                                "POST",
+                                "PUT",
+                                "DELETE"
+                            ]
+                        }
+                    }
+                },
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "true"
+                        },
+                        {
+                            "key": "internal",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "policyRevision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "tracingEnabled",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "wssProcessingEnabled",
+                            "booleanValue": "false"
+                        }
+                    ]
+                }
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "Demo\/Parrot API.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "b56f10f3c04cd607eb080dce4b042769"
+        },
+        {
+            "serviceDetail": {
+                "folderId": "b56f10f3c04cd607eb080dce4b0426e5",
+                "id": "b56f10f3c04cd607eb080dce4b0427ca",
+                "name": "Parrot API Backend",
+                "enabled": "true",
+                "serviceMappings": {
+                    "httpMapping": {
+                        "urlPattern": "\/parrot2",
+                        "verbs": {
+                            "verb": [
+                                "GET",
+                                "POST",
+                                "PUT",
+                                "DELETE"
+                            ]
+                        }
+                    }
+                },
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "true"
+                        },
+                        {
+                            "key": "internal",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "policyRevision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "tracingEnabled",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "wssProcessingEnabled",
+                            "booleanValue": "false"
+                        }
+                    ]
+                }
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "Demo\/Parrot API Backend.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "b56f10f3c04cd607eb080dce4b0427ca"
+        },
+        {
+            "serviceDetail": {
+                "folderId": "b56f10f3c04cd607eb080dce4b0426e5",
+                "id": "b56f10f3c04cd607eb080dce4b042815",
+                "name": "Demo Alarm API",
+                "enabled": "true",
+                "serviceMappings": {
+                    "httpMapping": {
+                        "urlPattern": "\/demoAlarm",
+                        "verbs": {
+                            "verb": [
+                                "GET",
+                                "POST",
+                                "PUT",
+                                "DELETE"
+                            ]
+                        }
+                    }
+                },
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "true"
+                        },
+                        {
+                            "key": "internal",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "policyRevision",
+                            "longValue": "3"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "tracingEnabled",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "wssProcessingEnabled",
+                            "booleanValue": "false"
+                        }
+                    ]
+                }
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "Demo\/Demo Alarm API.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "b56f10f3c04cd607eb080dce4b042815"
+        }
+    ]
+}

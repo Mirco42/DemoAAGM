@@ -11,6 +11,24 @@
             <L7p:Comment stringValue="*** Set value to 100 for a running state "/>
         </L7p:CommentAssertion>
         <L7p:CommentAssertion>
+            <L7p:Comment stringValue="*** Set value to 1 for a running state "/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="*** Set value to 2 for a running state "/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="*** Set value to 3 for a running state "/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="*** Set value to 4 for a running state "/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="*** Set value to 5 for a running state "/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="*** Set value to 6 for a running state "/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
             <L7p:Comment stringValue="*** Set value to 200 for a warning state "/>
         </L7p:CommentAssertion>
         <L7p:CommentAssertion>

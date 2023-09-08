@@ -31,7 +31,7 @@
                         },
                         {
                             "key": "policyRevision",
-                            "longValue": "2"
+                            "longValue": "1"
                         },
                         {
                             "key": "soap",
@@ -157,7 +157,7 @@
                         },
                         {
                             "key": "policyRevision",
-                            "longValue": "5"
+                            "longValue": "1"
                         },
                         {
                             "key": "soap",

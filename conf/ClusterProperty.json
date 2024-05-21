@@ -1,0 +1,9 @@
+{
+    "clusterproperty": [
+        {
+            "name": "apiida.aacp.apikey.exportApiKeyRecord",
+            "value": "true",
+            "id": "fec04b5f1ae987b8742415e1e2aa0a36"
+        }
+    ]
+}

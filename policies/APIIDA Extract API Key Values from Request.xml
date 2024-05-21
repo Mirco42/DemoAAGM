@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <wsp:All wsp:Usage="Required">
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="***************************"/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="** APIIDA: Control Plane Integration"/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="***************************"/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="** CWP: apiida.aacp.apikey.holder=request.http.parameter.apikey (optional)"/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="** CWP: apiida.aacp.keysecret.holder=request.http.parameter.keysecret (optional)"/>
+        </L7p:CommentAssertion>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="**"/>
+        </L7p:CommentAssertion>
+        <wsp:OneOrMore wsp:Usage="Required">
+            <wsp:All wsp:Usage="Required">
+                <L7p:LookupDynamicContextVariables>
+                    <L7p:SourceVariable stringValue="gateway.apiida.aacp.apikey.holder"/>
+                    <L7p:TargetDataType variableDataType="string"/>
+                    <L7p:TargetOutputVariablePrefix stringValue="apikey.holder"/>
+                </L7p:LookupDynamicContextVariables>
+                <L7p:AuditDetailAssertion>
+                    <L7p:CustomLoggerSuffix stringValue="apiida.aacp.logger"/>
+                    <L7p:Detail stringValue="lookup apikey from '${gateway.apiida.aacp.apikey.holder}'"/>
+                    <L7p:Level stringValue="FINER"/>
+                </L7p:AuditDetailAssertion>
+            </wsp:All>
+            <wsp:All wsp:Usage="Required">
+                <L7p:SetVariable>
+                    <L7p:Base64Expression stringValue="cmVxdWVzdC5odHRwLmhlYWRlci5hcGlrZXk="/>
+                    <L7p:VariableToSet stringValue="apikey.holder.output"/>
+                </L7p:SetVariable>
+                <L7p:AuditDetailAssertion>
+                    <L7p:CustomLoggerSuffix stringValue="apiida.aacp.logger"/>
+                    <L7p:Detail stringValue="lookup apikey from 'request.http.header.apikey'"/>
+                    <L7p:Level stringValue="FINER"/>
+                </L7p:AuditDetailAssertion>
+            </wsp:All>
+        </wsp:OneOrMore>
+        <wsp:OneOrMore wsp:Usage="Required">
+            <wsp:All wsp:Usage="Required">
+                <L7p:LookupDynamicContextVariables>
+                    <L7p:SourceVariable stringValue="gateway.apiida.aacp.keysecret.holder"/>
+                    <L7p:TargetDataType variableDataType="string"/>
+                    <L7p:TargetOutputVariablePrefix stringValue="keysecret.holder"/>
+                </L7p:LookupDynamicContextVariables>
+                <L7p:AuditDetailAssertion>
+                    <L7p:CustomLoggerSuffix stringValue="apiida.aacp.logger"/>
+                    <L7p:Detail stringValue="lookup secret from '${gateway.apiida.aacp.keysecret.holder}'"/>
+                    <L7p:Level stringValue="FINER"/>
+                </L7p:AuditDetailAssertion>
+            </wsp:All>
+            <wsp:All wsp:Usage="Required">
+                <L7p:SetVariable>
+                    <L7p:Base64Expression stringValue="cmVxdWVzdC5odHRwLmhlYWRlci5rZXlzZWNyZXQ="/>
+                    <L7p:VariableToSet stringValue="keysecret.holder.output"/>
+                </L7p:SetVariable>
+                <L7p:AuditDetailAssertion>
+                    <L7p:CustomLoggerSuffix stringValue="apiida.aacp.logger"/>
+                    <L7p:Detail stringValue="lookup secret from 'request.http.header.keysecret'"/>
+                    <L7p:Level stringValue="FINER"/>
+                </L7p:AuditDetailAssertion>
+            </wsp:All>
+        </wsp:OneOrMore>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="**"/>
+        </L7p:CommentAssertion>
+        <wsp:OneOrMore wsp:Usage="Required">
+            <L7p:LookupDynamicContextVariables>
+                <L7p:FailOnNotFound booleanValue="false"/>
+                <L7p:SourceVariable stringValue="${apikey.holder.output}"/>
+                <L7p:TargetDataType variableDataType="string"/>
+                <L7p:TargetOutputVariablePrefix stringValue="apikey"/>
+            </L7p:LookupDynamicContextVariables>
+            <L7p:TrueAssertion/>
+        </wsp:OneOrMore>
+        <wsp:OneOrMore wsp:Usage="Required">
+            <L7p:LookupDynamicContextVariables>
+                <L7p:FailOnNotFound booleanValue="false"/>
+                <L7p:SourceVariable stringValue="${keysecret.holder.output}"/>
+                <L7p:TargetDataType variableDataType="string"/>
+                <L7p:TargetOutputVariablePrefix stringValue="keysecret"/>
+            </L7p:LookupDynamicContextVariables>
+            <L7p:TrueAssertion/>
+        </wsp:OneOrMore>
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="**"/>
+        </L7p:CommentAssertion>
+        <L7p:SetVariable>
+            <L7p:Base64Expression stringValue="JHthcGlrZXkub3V0cHV0fQ=="/>
+            <L7p:VariableToSet stringValue="apikey"/>
+        </L7p:SetVariable>
+        <L7p:SetVariable>
+            <L7p:Base64Expression stringValue="JHtrZXlzZWNyZXQub3V0cHV0fQ=="/>
+            <L7p:VariableToSet stringValue="keysecret"/>
+        </L7p:SetVariable>
+    </wsp:All>
+</wsp:Policy>

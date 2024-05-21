@@ -6,5 +6,23 @@
       <l7:Folder folderId="0000000000000000ffffffffffffec76" id="b56f10f3c04cd607eb080dce4b0426e5" version="0">
         <l7:Name>Demo</l7:Name>
       </l7:Folder>
+      <l7:Folder folderId="0000000000000000ffffffffffffec76" id="539536d24c8fd53a68b1c8abf52bda41" version="0">
+        <l7:Name>APIIDA API Control Plane Integration</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="0000000000000000ffffffffffffec76" id="e001cfd0c1c1ffaa18e187b5e72fc718" version="0">
+        <l7:Name>OTK</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="539536d24c8fd53a68b1c8abf52bda41" id="8840cc6bcfd468648dc816432903db55" version="0">
+        <l7:Name>Enforcement</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc718" id="161861da3a78c5dcdc62696d16914781" version="0">
+        <l7:Name>Customizations</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc718" id="e001cfd0c1c1ffaa18e187b5e72fc818" version="0">
+        <l7:Name>Policy Fragments</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fc858" version="0">
+        <l7:Name>configuration</l7:Name>
+      </l7:Folder>
     </l7:Folders>
   </l7:Export>

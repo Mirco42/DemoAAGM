@@ -1,0 +1,60 @@
+{
+    "encapsulatedassertion": [
+        {
+            "name": "APIIDA Extract API Key Values from Request",
+            "guid": "2ecd447b-5c05-4123-b4fc-da035eba4efb",
+            "policyReference": {
+                "id": "32b0b7865dc5d3a00dcf2420160fe95b",
+                "resourceUri": "http:\/\/ns.l7tech.com\/2010\/04\/gateway-management\/policies"
+            },
+            "encapsulatedArguments": [],
+            "encapsulatedResults": {
+                "encapsulatedAssertionResult": [
+                    {
+                        "resultName": "apikey",
+                        "resultType": "string"
+                    },
+                    {
+                        "resultName": "keysecret",
+                        "resultType": "string"
+                    }
+                ]
+            },
+            "properties": {
+                "property": [
+                    {
+                        "key": "allowTracing",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "description",
+                        "stringValue": {
+                            "value": "APIIDA Extract API Key Values from Request"
+                        }
+                    },
+                    {
+                        "key": "paletteFolder",
+                        "stringValue": {
+                            "value": "customAssertions"
+                        }
+                    },
+                    {
+                        "key": "passMetricsToParent",
+                        "stringValue": {
+                            "value": "false"
+                        }
+                    },
+                    {
+                        "key": "policyGuid",
+                        "stringValue": {
+                            "value": "c231324e-bbd1-4b9b-8ef4-ec5cd53bbc08"
+                        }
+                    }
+                ]
+            },
+            "id": "51be510ddc48edf4362512170123923f"
+        }
+    ]
+}

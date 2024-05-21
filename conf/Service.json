@@ -3,7 +3,6 @@
         {
             "serviceDetail": {
                 "folderId": "b56f10f3c04cd607eb080dce4b0426e5",
-                "id": "b56f10f3c04cd607eb080dce4b042769",
                 "name": "Parrot API",
                 "enabled": "true",
                 "serviceMappings": {
@@ -46,7 +45,8 @@
                             "booleanValue": "false"
                         }
                     ]
-                }
+                },
+                "id": "b56f10f3c04cd607eb080dce4b042769"
             },
             "resources": {
                 "resourceSet": [
@@ -66,7 +66,6 @@
         {
             "serviceDetail": {
                 "folderId": "b56f10f3c04cd607eb080dce4b0426e5",
-                "id": "b56f10f3c04cd607eb080dce4b0427ca",
                 "name": "Parrot API Backend",
                 "enabled": "true",
                 "serviceMappings": {
@@ -109,7 +108,8 @@
                             "booleanValue": "false"
                         }
                     ]
-                }
+                },
+                "id": "b56f10f3c04cd607eb080dce4b0427ca"
             },
             "resources": {
                 "resourceSet": [
@@ -129,7 +129,6 @@
         {
             "serviceDetail": {
                 "folderId": "b56f10f3c04cd607eb080dce4b0426e5",
-                "id": "b56f10f3c04cd607eb080dce4b042815",
                 "name": "Demo Alarm API",
                 "enabled": "true",
                 "serviceMappings": {
@@ -149,7 +148,7 @@
                     "property": [
                         {
                             "key": "hasRouting",
-                            "booleanValue": "true"
+                            "booleanValue": "false"
                         },
                         {
                             "key": "internal",
@@ -172,7 +171,8 @@
                             "booleanValue": "false"
                         }
                     ]
-                }
+                },
+                "id": "b56f10f3c04cd607eb080dce4b042815"
             },
             "resources": {
                 "resourceSet": [

@@ -1,0 +1,84 @@
+{
+    "policy": [
+        {
+            "guid": "c231324e-bbd1-4b9b-8ef4-ec5cd53bbc08",
+            "policyDetail": {
+                "folderId": "8840cc6bcfd468648dc816432903db55",
+                "guid": "c231324e-bbd1-4b9b-8ef4-ec5cd53bbc08",
+                "name": "APIIDA Extract API Key Values from Request",
+                "policyType": "Include",
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "revision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        }
+                    ]
+                },
+                "id": "32b0b7865dc5d3a00dcf2420160fe95b"
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "APIIDA Extract API Key Values from Request.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "32b0b7865dc5d3a00dcf2420160fe95b"
+        },
+        {
+            "guid": "01c89bcf-5271-46f6-86f5-27436d2df4ca",
+            "policyDetail": {
+                "folderId": "539536d24c8fd53a68b1c8abf52bda41",
+                "guid": "01c89bcf-5271-46f6-86f5-27436d2df4ca",
+                "name": "APIIDA API Control Plane Integration - JSON Escape",
+                "policyType": "Include",
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "revision",
+                            "longValue": "2"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        }
+                    ]
+                },
+                "id": "7b6a05bc22d62140fd3a3758b00e9b97"
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "APIIDA API Control Plane Integration - JSON Escape.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "7b6a05bc22d62140fd3a3758b00e9b97"
+        }
+    ]
+}
